@@ -1,0 +1,481 @@
+@import url(fonts.css);
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+.btnsGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 110px; }
+  .btnsGroup .btn-custom {
+    background-color: #008ed6;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 14px 35px;
+    transition-duration: 0.3s; }
+    .btnsGroup .btn-custom:hover {
+      background-color: #008ed600;
+      color: #fff;
+      border: 1px solid #999999; }
+  .btnsGroup .btn-outline-secondary {
+    padding: 13px 35px;
+    text-transform: uppercase; }
+    .btnsGroup .btn-outline-secondary:hover {
+      background-color: #008ed6;
+      color: #fff;
+      border: 1px solid #008ed6; }
+
+header {
+  background-image: url("../images/headerBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0 0; }
+  header .navbar {
+    align-items: baseline;
+    background-color: transparent !important; }
+  header .navbar-brand {
+    color: #fff !important;
+    font-family: "Quicksand-Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px; }
+  header .nav-item .active {
+    color: #cdcbcb !important; }
+  header .nav-item .nav-link {
+    color: #fff !important;
+    font-family: "Source Sans Pro-Semibold", sans-serif;
+    font-size: 16px;
+    margin-right: 24px;
+    position: relative; }
+    header .nav-item .nav-link:before {
+      content: "";
+      background-color: #008ed6;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      transition-duration: 0.3s; }
+    header .nav-item .nav-link:after {
+      content: "";
+      background-color: #008ed6;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      right: 8px;
+      transition-duration: 0.3s; }
+    header .nav-item .nav-link:hover {
+      color: #cdcbcb !important; }
+      header .nav-item .nav-link:hover:before, header .nav-item .nav-link:hover:after {
+        width: 30%; }
+
+.headerLeftInfo {
+  margin-top: 100px; }
+  .headerLeftInfo h3 {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Source Sans Pro-Semibold", sans-serif;
+    margin-bottom: 40px; }
+    .headerLeftInfo h3:before {
+      color: #008ed6;
+      font-size: 14px;
+      font-family: "Source Sans Pro-Bold", sans-serif;
+      display: block;
+      content: "introducing lucid theme";
+      text-transform: uppercase;
+      margin-bottom: 33px; }
+  .headerLeftInfo p {
+    font-family: "Source Sans Pro-Regular", sans-serif;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 63px; }
+
+.prodOverv {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  padding: 60px 0; }
+  .prodOverv .sectCapt h3 {
+    font-family: "Source Sans Pro-Semibold", sans-serif;
+    color: #1a1a1a;
+    font-size: 36px;
+    margin-bottom: 43px; }
+    .prodOverv .sectCapt h3:before {
+      display: block;
+      content: "Product Overview";
+      color: #008ed6;
+      font-size: 14px;
+      font-family: "Source Sans Pro-Bold", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 32px; }
+  .prodOverv .sectCapt span {
+    width: 42px;
+    display: block;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 73px; }
+    .prodOverv .sectCapt span:after {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+    .prodOverv .sectCapt span:before {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+  .prodOverv .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .prodOverv .feature i {
+      color: #008ed6;
+      border: 1px solid #eeeeee;
+      border-radius: 50%;
+      font-size: 26px;
+      line-height: 90px;
+      height: 90px;
+      width: 90px;
+      text-align: center;
+      display: block;
+      margin-bottom: 39px; }
+    .prodOverv .feature h3 {
+      margin-bottom: 23px;
+      font-size: 24px;
+      font-family: "Source Sans Pro-Regular", sans-serif; }
+    .prodOverv .feature p {
+      font-family: "Source Sans Pro-Regular", sans-serif;
+      font-size: 18px;
+      color: #999999; }
+
+.dipIntoDet {
+  padding: 60px 0; }
+  .dipIntoDet .detDescription h3 {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-family: "Source Sans Pro-Semibold", sans-serif;
+    margin-bottom: 43px; }
+    .dipIntoDet .detDescription h3:before {
+      display: block;
+      content: "Dip Into The details";
+      color: #008ed6;
+      font-size: 14px;
+      font-family: "Source Sans Pro-Bold", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 32px; }
+  .dipIntoDet .detDescription span.underCapt {
+    width: 42px;
+    display: block;
+    height: 2px;
+    position: relative;
+    margin-bottom: 73px; }
+    .dipIntoDet .detDescription span.underCapt:after {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+    .dipIntoDet .detDescription span.underCapt:before {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+  .dipIntoDet .detDescription p {
+    font-family: "Source Sans Pro-Regular", sans-serif;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 63px; }
+  .dipIntoDet .detDescription ul {
+    list-style-type: none; }
+    .dipIntoDet .detDescription ul li {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: row; }
+      .dipIntoDet .detDescription ul li span i {
+        color: #008ed6;
+        font-size: 18px;
+        margin-right: 10px; }
+        .dipIntoDet .detDescription ul li span i.fa-tachometer-alt-fast {
+          margin-right: 3px;
+          font-size: 15px; }
+        .dipIntoDet .detDescription ul li span i.fa-trophy {
+          margin-right: 5px; }
+      .dipIntoDet .detDescription ul li span {
+        color: #1b1b1b;
+        font-size: 18px;
+        font-family: "Source Sans Pro-Regular", sans-serif; }
+
+.easyCustom {
+  padding: 60px 0;
+  background: #ededed; }
+  .easyCustom .customDescript h3 {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-family: "Source Sans Pro-Semibold", sans-serif;
+    margin-bottom: 37px; }
+    .easyCustom .customDescript h3:before {
+      display: block;
+      content: "Dip Into The details";
+      color: #008ed6;
+      font-size: 14px;
+      font-family: "Source Sans Pro-Bold", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+  .easyCustom .customDescript span {
+    width: 42px;
+    display: block;
+    height: 2px;
+    position: relative;
+    margin-bottom: 30px; }
+    .easyCustom .customDescript span:after {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+    .easyCustom .customDescript span:before {
+      content: " ";
+      background-color: #008ed6;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%; }
+  .easyCustom .customDescript p {
+    font-family: "Source Sans Pro-Regular", sans-serif;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 63px; }
+
+.owl-carousel {
+  position: relative;
+  margin-bottom: 60px; }
+
+.owl-dots {
+  position: absolute;
+  bottom: -75px;
+  left: 45%; }
+
+.owl-carousel .owl-dots span {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid #353437;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s; }
+.owl-carousel .owl-dots .active span {
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  text-align: center; }
+.owl-carousel .owl-dots button:nth-child(2) {
+  margin: 0 0 0 9px; }
+.owl-carousel .owl-dots button:nth-child(3) {
+  margin: 0 9px 0 9px; }
+
+.carouselSliders {
+  background-image: url("../images/slideBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  position: relative; }
+  .carouselSliders .slideHeading {
+    margin-bottom: 90px; }
+    .carouselSliders .slideHeading h3 {
+      color: #fff;
+      font-size: 36px;
+      font-family: "Source Sans Pro-Semibold", sans-serif;
+      margin-bottom: 37px; }
+      .carouselSliders .slideHeading h3:before {
+        display: block;
+        content: "Quality has its price";
+        color: #008ed6;
+        font-size: 14px;
+        font-family: "Source Sans Pro-Bold", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+    .carouselSliders .slideHeading span {
+      width: 42px;
+      display: block;
+      height: 2px;
+      position: relative;
+      margin: auto; }
+      .carouselSliders .slideHeading span:after {
+        content: " ";
+        background-color: #008ed6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 45%;
+        height: 100%; }
+      .carouselSliders .slideHeading span:before {
+        content: " ";
+        background-color: #008ed6;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%; }
+  .carouselSliders .quoteOne p, .carouselSliders .quoteTwo p {
+    font-family: "Source Sans Pro-Italic", sans-serif;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .carouselSliders .quoteAuthor {
+    display: flex;
+    flex-direction: row; }
+    .carouselSliders .quoteAuthor .authorPic {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 25px; }
+    .carouselSliders .quoteAuthor .authorDescr h3 {
+      font-family: "Source Sans Pro-Regular", sans-serif;
+      font-size: 16px;
+      color: #fff; }
+      .carouselSliders .quoteAuthor .authorDescr h3:after {
+        display: block;
+        margin-top: 15px;
+        content: "CEO, The rivers company";
+        text-transform: uppercase;
+        font-family: "Source Sans Pro-Bold", sans-serif; }
+      .carouselSliders .quoteAuthor .authorDescr h3.secAuthor:after {
+        content: "UX DESIGNER, GOOGLE INC."; }
+
+.eyeCatcher {
+  padding: 60px 0;
+  background-color: #15141a; }
+  .eyeCatcher .catcherContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; }
+    .eyeCatcher .catcherContent h3 {
+      color: #fff;
+      font-family: "Source Sans Pro-Semibold", sans-serif;
+      font-size: 36px; }
+    .eyeCatcher .catcherContent span {
+      color: #fff;
+      font-family: "Source Sans Pro-Light", sans-serif;
+      font-size: 36px; }
+    .eyeCatcher .catcherContent .btnsGroup {
+      margin-bottom: 0; }
+
+.pricingCards {
+  position: relative;
+  padding: 60px 0; }
+  .pricingCards .pricingCard ul {
+    list-style-type: none;
+    transition: 0.4s linear; }
+    .pricingCards .pricingCard ul li {
+      border: 1px solid #e0e0e0;
+      padding: 30px;
+      text-align: center; }
+      .pricingCards .pricingCard ul li:nth-of-type(2) {
+        padding: 43px 0;
+        transition: 0.4s linear;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        .pricingCards .pricingCard ul li:nth-of-type(2) sup.laterAnimDoll {
+          font-size: 30px;
+          transition-duration: 0.5s;
+          display: block;
+          top: 0.5em;
+          left: -20px; }
+          .pricingCards .pricingCard ul li:nth-of-type(2) sup.laterAnimDoll.secndDoll, .pricingCards .pricingCard ul li:nth-of-type(2) sup.laterAnimDoll.thirdDoll, .pricingCards .pricingCard ul li:nth-of-type(2) sup.laterAnimDoll.frthDoll {
+            left: -29px; }
+        .pricingCards .pricingCard ul li:nth-of-type(2) span.fasterAnimPrice {
+          font-size: 40px; }
+      .pricingCards .pricingCard ul li:last-of-type {
+        padding: 50px 30px; }
+      .pricingCards .pricingCard ul li p {
+        margin-bottom: 40px;
+        text-align: center; }
+      .pricingCards .pricingCard ul li .btn-outline-order {
+        text-transform: uppercase;
+        border: 1px solid #e0e0e0;
+        padding: 12px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #008ed6;
+        display: inline-block;
+        transition-duration: 0.3s; }
+    .pricingCards .pricingCard ul:hover {
+      box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px); }
+      .pricingCards .pricingCard ul:hover h3 {
+        color: #008ed6; }
+      .pricingCards .pricingCard ul:hover li:nth-of-type(2) {
+        background: #008ed6; }
+        .pricingCards .pricingCard ul:hover li:nth-of-type(2) span.fasterAnimPrice, .pricingCards .pricingCard ul:hover li:nth-of-type(2) sup.laterAnimDoll {
+          color: #FFFFFF; }
+      .pricingCards .pricingCard ul:hover .btn-outline-order {
+        color: #FFFFFF;
+        background: #008ed6; }
+  .pricingCards .cardsHeading {
+    margin-bottom: 70px; }
+    .pricingCards .cardsHeading h3 {
+      color: #1a1a1a;
+      font-size: 36px;
+      font-family: "Source Sans Pro-Semibold", sans-serif;
+      margin-bottom: 37px;
+      text-align: center; }
+      .pricingCards .cardsHeading h3:before {
+        display: block;
+        content: "Quality has its price";
+        color: #008ed6;
+        font-size: 14px;
+        font-family: "Source Sans Pro-Bold", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-top: 60px; }
+    .pricingCards .cardsHeading span {
+      width: 42px;
+      display: block;
+      height: 2px;
+      position: relative;
+      margin: auto; }
+      .pricingCards .cardsHeading span:after {
+        content: " ";
+        background-color: #008ed6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 45%;
+        height: 100%; }
+      .pricingCards .cardsHeading span:before {
+        content: " ";
+        background-color: #008ed6;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
