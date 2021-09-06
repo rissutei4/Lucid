@@ -13,7 +13,7 @@
     <title>Lucid</title>
 </head>
 <body>
-<header>
+<header id="Home">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Lucid</a>
@@ -24,22 +24,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#Features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" href="#Testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#Pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
     </div>
 </header>
 
-<section class="prodOverv">
+<section class="prodOverv" id="Features">
     <div class="container">
         <div class="sectCapt text-center">
             <h3>List Of Amazing Features</h3>
@@ -108,7 +108,7 @@
     </div>
 </section>
 
-<div class="dipIntoDet">
+<div class="dipIntoDet" id="About">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -158,7 +158,7 @@
     </div>
 </div>
 
-<div class="carouselSliders">
+<div class="carouselSliders" id="Testimonials">
     <div class="container">
         <div class="slideHeading text-center">
             <h3>Pricing & Plans</h3>
@@ -315,13 +315,15 @@
     </div>
 </div>
 
-<div class="eyeCatcher">
+<div class="eyeCatcher reveal">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="catcherContent">
-                    <h3>Like what you see?</h3>
-                    <span>Get this great theme now!</span>
+                    <div class="catcherText">
+                        <h3>Like what you see?</h3>
+                        <span>Get this great theme now!</span>
+                    </div>
                     <div class="btnsGroup">
                         <a href="#" class="btn btn-outline-secondary mr-3">View Features</a>
                         <a href="#" class="btn btn-custom mr-3">Download Now</a>
@@ -332,7 +334,7 @@
     </div>
 </div>
 
-<div class="pricingCards">
+<div class="pricingCards" id="Pricing">
     <div class="container">
         <div class="cardsHeading">
             <h3>Pricing & Plans</h3>
@@ -344,10 +346,10 @@
                     <ul>
                         <li><h3>Free</h3></li>
                         <li>
-                        <h3>
-                            <sup class="laterAnimDoll">$</sup>
-                            <span class="fasterAnimPrice">0</span>
-                        </h3>
+                            <h3>
+                                <sup class="laterAnimDoll">$</sup>
+                                <span class="fasterAnimPrice">0</span>
+                            </h3>
                             <span>/per month</span>
                         </li>
                         <li><p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <a href="#">lacinia</a>
@@ -415,13 +417,97 @@
     </div>
 </div>
 
-<div class="stayInTouch">
+<div class="stayInTouch" id="Contact">
+    <div class="inTouchHeading">
+        <h3>Contact Us</h3>
+        <span></span>
+    </div>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <div class="contactBox">
+                    <i class="fal fa-mobile"></i>
+                    <span>Phone:(415) 124-5678</span>
+                    <span>Fax: (412) 123-8290</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="contactBox">
+                    <i class="fal fa-map-marker-alt"></i>
+                    <span>1001 Brickell Bay Dr.
+Suite 1900
+Miami, FL 33131</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="contactBox">
+                    <i class="fal fa-envelope"></i>
+                    <span>support@yourname.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="contactForm">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md">
 
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nameInput"
+                                           aria-describedby="nameInput" placeholder="Name *">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailInput"
+                                           aria-describedby="emailInput" placeholder="Email *">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subjectInput"
+                                           aria-describedby="subjectInput" placeholder="Subject *">
+                                </div>
+
+                            </div>
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="textArea" rows="5"
+                                              placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="contactMap">
+    <div class="iframeBox">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.2054341087214!2d-80.192428684979!3d25.763777183635828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823344d3c1%3A0x5cddf1501fa48f97!2zMTAwMSBCcmlja2VsbCBCYXkgRHIgIzE5MDAsIE1pYW1pLCBGTCAzMzE0Mywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1630947862505!5m2!1sru!2sua"
+                width="600" height="450" style="border:0; margin: 0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row flex-column align-items-center">
+            <ul class="socialsList">
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <span>copyright © 2014 lucid onepage theme</span>
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

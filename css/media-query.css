@@ -1,0 +1,34 @@
+@media only screen and (max-width: 767px) {
+  .navbar-toggler-icon {
+    font-family: "Font Awesome 5 Pro", sans-serif;
+    font-weight: 400;
+    background-image: none !important; }
+    .navbar-toggler-icon:before {
+      content: "\f0c9";
+      color: #f8f9fa; } }
+@media only screen and (max-width: 426px) {
+  .btnsGroup .btn-custom, .btnsGroup .btn-outline-secondary {
+    padding: 6px 5px; }
+
+  .stayInTouch .contactBox {
+    margin-bottom: 20px; }
+
+  .eyeCatcher {
+    padding: 50px 0; }
+    .eyeCatcher .catcherContent {
+      flex-direction: column;
+      align-items: center; }
+      .eyeCatcher .catcherContent .catcherText {
+        margin-bottom: 15px; }
+        .eyeCatcher .catcherContent .catcherText h3 {
+          font-size: 21px;
+          margin-right: 5px; }
+        .eyeCatcher .catcherContent .catcherText span {
+          font-size: 21px; }
+    .eyeCatcher .btnsGroup .btn-custom, .eyeCatcher .btnsGroup .btn-outline-secondary {
+      padding: 6px 5px; }
+
+  .form-group.text-right {
+    text-align: center !important; } }
+
+/*# sourceMappingURL=media-query.css.map */
