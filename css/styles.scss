@@ -22,7 +22,9 @@ $sspThin: 'Source Sans Pro-Light', sans-serif;
   transform: translateY(0px);
   opacity: 1;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -63,12 +65,13 @@ $sspThin: 'Source Sans Pro-Light', sans-serif;
 
 
 header {
-  background-image: url("../images/headerBg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px 0 0;
-
+position: fixed;
+  width: 100%;
+  &.sticky{
+    position: fixed;
+    background:#16151b;
+    z-index: 10;
+  }
   .navbar {
     align-items: baseline;
     background-color: transparent !important;
@@ -155,6 +158,12 @@ header {
   }
 }
 
+.underHeaderSect{
+  background-image: url("../images/headerBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .prodOverv {
   background-color: #ffffff;

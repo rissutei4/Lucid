@@ -6,7 +6,16 @@
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
+  header{
+    position: relative;
+    background:#16151b;
+    .nav-link{
+      &:before, &:after{
+        display: none;
+      }
+    }
+  }
   .navbar-toggler-icon{
     font-family: "Font Awesome 5 Pro", sans-serif;
     font-weight: 400;
@@ -22,7 +31,7 @@
 
   .btnsGroup {
     .btn-custom, .btn-outline-secondary {
-      padding: 6px 5px;
+      padding: 14px 5px;
     }
   }
 

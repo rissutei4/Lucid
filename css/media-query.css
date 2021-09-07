@@ -1,4 +1,10 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
+  header {
+    position: relative;
+    background: #16151b; }
+    header .nav-link:before, header .nav-link:after {
+      display: none; }
+
   .navbar-toggler-icon {
     font-family: "Font Awesome 5 Pro", sans-serif;
     font-weight: 400;
@@ -8,7 +14,7 @@
       color: #f8f9fa; } }
 @media only screen and (max-width: 426px) {
   .btnsGroup .btn-custom, .btnsGroup .btn-outline-secondary {
-    padding: 6px 5px; }
+    padding: 14px 5px; }
 
   .stayInTouch .contactBox {
     margin-bottom: 20px; }
